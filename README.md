@@ -24,7 +24,7 @@
        ```
 
   2. **Correcting the WHO Region Data**:
-     - For cases where the region was "Australia/Oceania", I updated it to "Western Pacific":
+     - For cases where the region was "Australia/Oceania," updated it to "Western Pacific":
        ```DAX
        whor = IF(worldometer_data[WHO reg] = "Australia/Oceania", "Western Pacific", worldometer_data[WHO reg])
        ```
@@ -102,6 +102,9 @@
 - **Hierarchical Structure**: Set up drill-down functionality between regions, continents, and WHO regions to analyze active cases in greater detail.
   - Users can click on a specific region or continent to drill down into more granular data (e.g., by WHO region).
 
+---
+
+### Page 4: Time-Series Trends
 - **Line Chart**: 
   - Displayed trends of active COVID-19 cases by WHO region over time.
   - Added **date** as a page-level filter to allow users to explore data over different months.
@@ -109,14 +112,23 @@
 
 ---
 
-### Page 4: Additional Insights and Relationships
+### Page 5: Additional Insights and Relationships
 - **Advanced Charts**: 
   - Added various charts to explore relationships between different data points.
   - Explored how active cases correlate with recoveries, deaths, and confirmed cases across regions and WHO regions.
 
 ---
 
-## 4. Conclusion
+## 4. Color Theme
+- **Primary Colors**:
+  - **#19222d**: Used as the background color for a sleek, dark theme.
+  - **#00a8e1**: Used for primary highlights, such as titles, key data points, and visual emphasis.
+
+  The color scheme creates a professional and data-focused look, helping users to easily interpret key metrics and trends.
+
+---
+
+## 5. Conclusion
 
 This Power BI report offers comprehensive insights into the global spread of COVID-19 using data from WHO and Worldometer. Key findings include:
 
@@ -128,12 +140,10 @@ The interactive elements, such as slicers and drill-down functionality, allow fo
 
 ---
 
-## 5. Future Improvements
+## 6. Future Improvements
 - Future updates could include more granular data, such as daily cases and recovery rates, to allow for a more detailed trend analysis.
 - Incorporate additional external data sources for a more comprehensive analysis.
 
 ---
 
 This README serves as a guide to understanding the Power BI COVID-19 report, detailing the steps taken to clean and preprocess the data, as well as providing an overview of the analysis and visualizations included in the report.
-
-   
