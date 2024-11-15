@@ -74,27 +74,25 @@
     - Sum of Deaths
     - Sum of Recoveries
     - Confirmed COVID-19 Cases
-  - **Slicer**: Implemented slicers for dynamic filtering by region, continent, and WHO region.
+  - **Slicer**: 
+    - Added a **month slicer** to allow users to filter the data dynamically by month. This enables users to explore trends and metrics for specific time periods.
 
-  - **4 Gauge Charts**: 
+  - **4 Gauge Charts**:
     - Display key metrics in a visual format:
       - **Active Cases**
       - **Deaths**
       - **Recoveries**
       - **Confirmed COVID-19 Cases**
     
-  - **3 Cards**: 
+  - **3 Cards**:
     - Each card displays a summary statistic:
       - **Total Confirmed Cases** (Global count)
       - **Total Active Cases** (Global count)
       - **Total Deaths** (Global count)
     
-  - **Map**: 
+  - **Map**:
     - The map visualizes the geographical distribution of COVID-19 cases globally. It uses color coding to indicate the **number of confirmed COVID-19 cases** in different countries or regions.
     - Users can hover over countries to view detailed metrics (e.g., Active cases, Total cases, Deaths).
-
-  - **Slicer**:
-    - A **slicer** is used for filtering the data by region, continent, and WHO region. It allows users to narrow down the data to specific geographical areas and update the visuals accordingly.
 
 ---
 
