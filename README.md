@@ -32,11 +32,7 @@
   3. **Consolidating Regions**:
      - Combined North and South America into "Americas", Asia into "South-East Asia":
        ```DAX
-        Whoregion = IF( (worldometer_data[whor] = "North America" || worldometer_data[whor] = "South America"), "Americas", IF(
-        worldometer_data[whor] = "Asia", 
-        "South-East Asia", 
-        worldometer_data[whor] ))
-
+        Whoregion = IF( (worldometer_data[whor] = "North America" || worldometer_data[whor] = "South America"), "Americas", IF( worldometer_data[whor] = "Asia", "South-East Asia",  worldometer_data[whor] ))
        ```
 
   - **Final Data Purification**: Removed any remaining null or invalid values to ensure the dataset was clean and ready for analysis.
